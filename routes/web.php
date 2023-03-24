@@ -29,15 +29,3 @@ Route::get('/listings/{id}', function ($id) {
         'listing' => Listing::find($id)
     ]);
 });
-
-/*Route::get('/hello', function () {
-return response('<h1>Hello World</h1>');
-});
-Route::get('/posts/{id}', function ($id) {
-// ddd($id);
-return response('Post' . $id);
-})->where('id', '[0-9]+');
-Route::get('/search', function (Request $request) {
-// dd($request->name . ' ' . $request->city);
-return $request->name . ' ' . $request->city;
-});*/
